@@ -1,0 +1,348 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+
+/*------------------------- header-------------------------- */
+
+.header {
+
+}
+
+.flex_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top_header {
+    padding: 15px 0;
+    width: 100%;
+    background-color: #111111;
+}
+
+.top_header_left {
+    width: 50%;
+}
+
+.top_header_left p {
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+}
+
+.top_header_right {
+    width: 50%;
+    text-align: right;
+}
+
+.top_header_right .right_link {
+    display: inline-block;
+}
+
+.right_link a {
+    margin-right: 28px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.top_header_right .pay_unit {
+    margin-right: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.top_header_right .pay_unit a {
+    color: white;
+}
+
+.top_header_right .pay_unit span {
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.pay_unit span i {
+    position: absolute;
+    top: 4px;
+    margin-left: 8px;
+    font-size: 11px;
+}
+
+.bottom_header {
+    padding: 30px 0;
+}
+
+.bottom_header ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav ul li a {
+    padding: 4px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111111;
+    position: relative
+}
+
+
+.nav ul li a:hover:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #e53637;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.nav ul li a:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #e53637;
+    content: "";
+    transition: all, 0.5s;
+    transform: scale(0);
+}
+
+.nav ul li.active a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #e53637;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.bottom_header .logo {
+    width: 25%;
+}
+
+.bottom_header .nav {
+    width: 50%;
+}
+
+.bottom_header .header_icon {
+    display: flex;
+    width: 25%;
+    justify-content: flex-end;
+}
+
+.bottom_header .header_icon a {
+    margin-right: 28px;
+}
+
+.header_icon .cart {
+    display: flex;
+    position: relative;
+}
+
+.header_icon .cart span {
+    position: absolute;
+    font-size: 11px;
+    top: 4px;
+    left: 5px;
+}
+
+.header_icon .cart .price {
+    font-weight: 700;
+}
+
+.header_icon .heart {
+    padding-top: 2px;
+}
+
+/*------------------------- content-------------------------- */
+.bg_content {
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.content {
+    padding-top: 230px;
+}
+
+.content img {
+    max-width: 100%;
+}
+
+.content .shop_buy {
+    max-width: 40%;
+    margin-left: 15px;
+}
+
+.content .shop_buy h6 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    font-size: 14px;
+    color: #e53637;
+}
+
+.content .shop_buy h2 {
+    line-height: 58px;
+    margin-bottom: 35px;
+    font-size: 48px;
+    color: #111111;
+    font-weight: 700;
+}
+
+.content .shop_buy p {
+    line-height: 28px;
+    margin-bottom: 35px;
+}
+
+.click_buy {
+    padding: 14px 30px;
+    background-color: #111111;
+    display: inline-block;
+}
+
+.click_buy a {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.click_buy i {
+    color: white;
+    font-size: 13px;
+}
+
+
+   /* ------------------------------banner------------------------*/
+.banner {
+    padding: 100px 0;
+}
+
+.banner h2 {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.banner a {
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 4px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.banner a:after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #111111;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.banner .hover:hover a:after {
+    content: "";
+    width: 40%;
+    background-color: #e53637;
+}
+
+.banner_row {
+    padding: 0px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner_row .banner_link {
+    max-width: 300px;
+}
+
+.banner .banner_1 {
+    margin-left: 30%;
+    margin-right: 10%;
+    width: 100%;
+    position: relative;
+}
+
+.banner .banner_1 .banner_link {
+    position: absolute;
+    top: 140px;
+    left: 4%;
+}
+
+.banner .banner_1 .banner_img {
+    float: right;
+}
+
+.banner .banner_2 {
+    width: 50%;
+    margin-top: -75px;
+}
+
+.banner .banner_2 .banner_link {
+    padding-top: 20px;
+}
+
+.banner .banner_3 {
+    margin-top: 100px;
+    position: relative;
+    width: 50%;
+}
+
+.banner .banner_3 .banner_link {
+    position: absolute;
+    top: 140px;
+    left: -13%;
+}
+
+.banner .banner_3 .banner_img {
+    float: right;
+}
