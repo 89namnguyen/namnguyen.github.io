@@ -436,12 +436,12 @@ ul {
 }
 
 .product_text h6 {
-    visibility: unset;
+    transform: scale(1);
     transition: all 0.3s;
 }
 
 .product_item:hover .product_text h6 {
-    visibility: hidden;
+    transform: scale(0);
     transition: all 0.3s;
 }
 
