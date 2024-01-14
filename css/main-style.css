@@ -206,6 +206,8 @@ ul {
     position: absolute;
     top: 50%;
     left: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
 .arow_left i {
@@ -216,6 +218,8 @@ ul {
     position: absolute;
     top: 50%;
     right: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
 .arow_right i {
